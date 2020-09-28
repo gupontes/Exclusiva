@@ -1,0 +1,733 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 1397px;
+	z-index: 1;	
+	scroll-behavior: smooth;
+}
+
+.center{
+	max-width: 375px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*------------------- Menu --------------------*/
+/*
+.menu-mobile {
+	background-color: rgba(44, 21, 39, 0.949);
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 375px;
+	height: 1397px;
+	z-index: 3000;
+	
+}*/
+
+.mobile{
+	background-image: url('../images/menu-icon.png');
+	z-index: 3000;
+	position: absolute;
+	left: 22px;
+	top: 23px;
+	width: 31px;
+	height: 20px;
+	cursor: pointer;
+	
+		
+}
+
+.mobile ul{
+	width: 321px;
+	height: 800px;
+	background-color: white;
+	position: absolute;
+	z-index: 2000;
+	display: none;	
+	left: -22px;
+	top: -23px;
+}
+
+.mobile li{
+	width: 321px;
+	height: 64px;
+	background-color: white;
+	border: 0.5px solid rgb(228, 228, 228);	
+	position: relative;
+	z-index: 16;
+	display: block;
+	cursor: pointer;
+	transition: 0.6s;
+}
+
+.mobile li:hover{
+	background-color: #eaeaea;
+}
+
+
+.mobile li a{
+	font-size: 19px;
+	font-family: "Montserrat";
+	color: rgb(140, 140, 140);
+	line-height: 1.137;
+	text-align: left;
+	position: absolute;
+	z-index: 27;
+	text-decoration: none;
+	left: 27px;	
+	top: 50%;
+	transform: translateY(-50%);
+	transition: 0.6s;
+}
+
+.mobile li a:hover{
+	text-decoration: underline;
+}
+
+.mobile .seta-menu{
+	position: relative;
+	left: 287px;	
+	width: 7px;
+	height: 16px;
+	z-index: 15;
+	top: 50%;
+	transform: translateY(-50%);		
+}
+  
+  
+
+/*------------------- Header --------------------*/
+
+.topo1 {
+	background-color: rgb(69, 33, 62);
+	position: absolute;
+	left: 0px;
+	top:  0px;
+	width: 375px;
+	height: 68px;
+	display: flex;
+	z-index: 100;
+}
+  
+.topo1 .logo{
+	position: absolute;
+	left: 98px;
+	top: 19px;
+	width: 154px;	
+	cursor: pointer;	
+}
+
+.topo1 .search{
+	position: absolute;
+	left: 293px;
+	top: 20px;
+	width: 25px;
+	height: 25px;	
+	cursor: pointer;  
+}
+
+.topo1 .shopping{
+	position: absolute;
+	left: 326px;
+	top: 19px;
+	width: 29px;
+	height: 25px;	
+	cursor: pointer;  
+}
+
+.topo1 .item{
+	border-radius: 50%;
+	background-color: rgb(200, 10, 89);
+	position: absolute;
+	left: 346px;
+	top: 16px;
+	width: 20px;
+	height: 20px;	    
+}
+
+.topo2{
+	background-color: rgb(52, 21, 46);
+	position: absolute;
+	left: 0px;
+	top: 65px;
+	width: 375px;
+	height: 53px;			
+}
+
+.topo2 .lock{
+	background-color: rgba(253, 138, 119, 0);
+	position: absolute;
+	left: 40px;
+	top: 12px;
+	width: 25px;
+	height: 27px;	 
+}
+
+.topo2 h2{
+	font-size: 4.2px;
+	font-family: "Montserrat";
+	color: rgb(249, 151, 199);
+	line-height: 0.967;
+	text-align: left;
+	-moz-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	-webkit-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	-ms-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	position: absolute;
+	left: 155px;
+	top: 26px;
+}
+
+/*------------------- Section --------------------*/
+
+.vibradores{
+	background-color: rgb(69, 33, 62);
+	position: absolute;
+	left: 22px;
+	top: 145px;
+	width: 331px;
+	height: 113px;
+	display: block;
+	cursor: pointer;	
+	overflow: hidden;
+	transition: 0.2s;	  
+	border:0;
+}
+
+.vibradores:hover{
+	border: 3px solid rgb(194, 192, 192);
+}
+
+.vibradores > h3 {
+	font-size: 5.76px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-align: center;	
+	-moz-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	-webkit-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	-ms-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	left: 146.597px;
+	top: 52px;
+	position: absolute;
+	z-index: 78;
+	display: block;
+	cursor: pointer;	
+}
+ 
+.vibradores .vibrador1{
+	position: absolute;
+	left: 164px;
+	top: 66px;
+	width: 23px;
+	height: 31px;
+	display: block;
+	cursor: pointer;		  
+}
+
+.vibradores .vibrador{
+	position: absolute;
+	left: 172px;
+	top: 8px;
+	width: 100px;
+	height: 161px;	 
+	z-index: 75; 
+	display: block;
+	cursor: pointer;
+}
+
+.vibradores .vibrador2{
+	position: absolute;
+	left: 227px;
+	top: 29px;
+	width: 23px;
+	height: 32px;
+	display: block;
+	cursor: pointer;
+}
+
+.acessorios{
+	background-color: rgb(219, 101, 140);
+	position: absolute;
+	left: 22px;
+	top: 268px;
+	width: 331px;
+	height: 113px;
+	z-index: 65;  
+	display: block;
+	cursor: pointer;	
+	overflow: hidden;
+	transition: 0.2s;	  
+	border:0;
+}
+
+.acessorios:hover{
+	border: 3px solid rgb(194, 192, 192);
+}
+
+.acessorios h3{
+	font-size: 5.76px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 3.067;
+	text-align: center;
+	-moz-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	-webkit-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	-ms-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	position: absolute;
+	left: 147.962px;
+	top: 52px;
+	z-index: 67;  
+}
+
+.acessorios .acessorio{
+	position: absolute;
+	left: 98px;
+	top: -18px;
+	width: 123px;
+	height: 139px;
+	z-index: 66;	
+}
+
+.anal{	
+	background-color: rgb(145, 36, 72);
+	position: absolute;
+	left: 23px;
+	top: 391px;
+	width: 161px;
+	height: 113px;
+	z-index: 60;
+	display: block;
+	cursor: pointer;
+	overflow: hidden;
+	transition: 0.2s;	  
+	border:0;	    
+}
+
+.anal:hover{
+	border: 3px solid rgb(194, 192, 192);
+}
+
+.anal > h3{	
+	font-size: 5.76px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 3.067;
+	text-align: center;
+	-moz-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	-webkit-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	-ms-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	position: absolute;
+	left: 74.214px;
+	top: 52px;
+	z-index: 62;
+}
+
+.anal .anal1{
+	position: absolute;
+	left: 13px;
+	top: -2px;
+	width: 84px;
+	height: 125px;
+}
+
+.sado{
+	background-color: rgb(145, 36, 72);
+	position: absolute;
+	left: 191px;
+	top: 391px;
+	width: 161px;
+	height: 113px;
+	z-index: 55;
+	display: block;
+	cursor: pointer;
+	overflow: hidden;
+	transition: 0.2s;	  
+	border:0;
+}
+
+.sado:hover{
+	border: 3px solid rgb(194, 192, 192);
+}
+
+.sado h3{
+	font-size: 5.76px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 3.067;
+	text-align: center;
+	-moz-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	-webkit-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	-ms-transform: matrix( 2.77966354525106,0,0,2.77787411045545,0,0);
+	position: absolute;
+	left: 74.214px;
+	top: 52px;
+	z-index: 57;  
+}
+
+.sado .sado1{
+	position: absolute;
+	left: 65px;
+	top: -2px;
+	width: 116px;
+	height: 112px;
+	z-index: 56;  
+}
+
+.lingeriesEfantasias{
+	background-color: rgb(225, 225, 225);
+	position: absolute;
+	left: 22px;
+	top: 514px;
+	width: 331px;
+	height: 153px;
+	z-index: 49; 
+	display: block;
+	cursor: pointer; 
+	transition: 0.2s;	  
+	border:0;
+}
+
+.lingeriesEfantasias:hover{
+	border: 3px solid rgb(194, 192, 192);
+}
+.lingeriesEfantasias img{
+	max-width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.lingeriesEfantasias h1{
+	font-size: 8.64px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	line-height: 2.045;
+	text-align: center;
+	-moz-transform: matrix( 2.77334564985629,0,0,2.78639250092049,0,0);
+	-webkit-transform: matrix( 2.77334564985629,0,0,2.78639250092049,0,0);
+	-ms-transform: matrix( 2.77334564985629,0,0,2.78639250092049,0,0);
+	position: absolute;
+	left: 117.678px;
+	top: 59.2522px;
+	z-index: 52;  
+}
+
+.lingeriesEfantasias p{
+	font-size: 21.276px;
+	font-family: "Raleway";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 0.934;
+	-moz-transform: matrix( 0.49764652268157,0,0,0.48080517038333,0,0);
+	-webkit-transform: matrix( 0.49764652268157,0,0,0.48080517038333,0,0);
+	-ms-transform: matrix( 0.49764652268157,0,0,0.48080517038333,0,0);
+	position: absolute;
+	left: 45.393px;
+	top: 91.498px;
+	z-index: 51;  
+}
+
+.cadastro{
+	left: 0px;
+	top: 0px;
+	width: 375px;
+	height: 1397px;
+	z-index: 47;
+}
+
+.cadastro .cadastro1 {	
+	position: absolute;
+	left: 166px;
+	top: 707px;
+	width: 47px;
+	height: 49px;
+	z-index: 39;
+}
+
+.cadastro > h1 {
+	font-size: 20.251px;
+	font-family: "Montserrat";
+	color: rgb(69, 33, 62);
+	line-height: 1.2;
+	text-align: center;
+	-moz-transform: matrix( 0.89493475178379,0,0,0.88882459312839,0,0);
+	-webkit-transform: matrix( 0.89493475178379,0,0,0.88882459312839,0,0);
+	-ms-transform: matrix( 0.89493475178379,0,0,0.88882459312839,0,0);
+	position: absolute;
+	left: 88.575px;
+	top: 773.849px;
+	z-index: 36;  
+}
+
+.cadastro > h2{
+	font-size: 20.251px;
+	font-family: "Montserrat";
+	color: rgb(69, 33, 62);
+	line-height: 1.2;
+	text-align: center;
+	-moz-transform: matrix( 0.89493475178379,0,0,0.88882459312839,0,0);
+	-webkit-transform: matrix( 0.89493475178379,0,0,0.88882459312839,0,0);
+	-ms-transform: matrix( 0.89493475178379,0,0,0.88882459312839,0,0);
+	position: absolute;
+	left: 59.621px;
+	top: 795.524px;
+	z-index: 38;  
+}
+
+.cadastro > p{		
+	font-size: 17.751px;
+	font-family: "Montserrat";
+	color: rgb(145, 145, 145);
+	line-height: 1.286;
+	text-align: center;
+	-moz-transform: matrix( 0.89493475178379,0,0,0.88882459312839,0,0);
+	-webkit-transform: matrix( 0.89493475178379,0,0,0.88882459312839,0,0);
+	-ms-transform: matrix( 0.89493475178379,0,0,0.88882459312839,0,0);
+	position: absolute;
+	left: 0px;
+	top: 821.185px;
+	z-index: 37;  
+}
+
+.cadastro form input[type=text]{
+	border-width: 2px;
+	border-color: rgb(235, 235, 235);
+	border-style: solid;
+	border-radius: 4px;
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+	left: 59px;
+	top: 878px;
+	width: 261px;
+	height: 42px;
+	z-index: 30; 
+	font-size: 14.269px;
+	font-family: "Montserrat";
+	color: rgb(194, 192, 192);
+	line-height: 0.943;
+	text-align: center;	
+	transition: 0.6s;	  	
+}
+
+.cadastro form input[type=email]{
+	border-width: 2px;
+	border-color: rgb(235, 235, 235);
+	border-style: solid;
+	border-radius: 4px;
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+	left: 59px;
+	top: 929px;
+	width: 261px;
+	height: 42px;
+	z-index: 30; 
+	font-size: 14.269px;
+	font-family: "Montserrat";
+	color: rgb(194, 192, 192);
+	line-height: 0.943;
+	text-align: center;	
+	transition: 0.6s;	  	
+}
+
+.cadastro form input:hover{
+	border: 3px solid rgb(194, 192, 192);
+}
+
+.cadastro form input[type=submit]{
+	border-radius: 4px;
+	background-color: rgb(94, 45, 84);
+	position: absolute;
+	left: 59px;
+	top: 979px;
+	width: 260px;
+	height: 41px;
+	z-index: 32;
+	font-size: 16px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	text-align: center;	
+	display: block;
+	cursor: pointer;  
+	transition: 0.6s;	  
+}
+
+.cadastro form input[type=submit]:hover{
+	background-color: #773d6b;
+	text-decoration: underline rgb(194, 192, 192);;
+	border: 3px solid rgb(194, 192, 192);
+}
+
+/*------------------- Footer --------------------*/
+
+footer{	
+	background-color: rgb(69, 33, 62);
+	position: absolute;
+	left: 0px;
+	top: 1085px;
+	width: 375px;
+	height: 313px;
+	z-index: 16;
+}
+
+footer h1{
+	font-size: 36px;
+	font-family: "Montserrat";
+	color: #a3919f;
+	line-height: 0.912;
+	text-align: center;
+	-moz-transform: matrix( 0.48096452447481,0,0,0.47504022372614,0,0);
+	-webkit-transform: matrix( 0.48096452447481,0,0,0.47504022372614,0,0);
+	-ms-transform: matrix( 0.48096452447481,0,0,0.47504022372614,0,0);
+	position: absolute;
+	left: -22px;
+	top: 53px;
+	z-index: 25;  
+}
+
+footer .traço{
+	background-color: rgb(113, 59, 103);
+	position: absolute;
+	left: 134px;
+	top: 83px;
+	width: 62px;
+	height: 2px;
+	z-index: 26;		  
+}
+
+footer .telefone{
+	display: block;
+	cursor: pointer; 	
+}
+
+footer .telefone svg{
+	position: absolute;
+	left: 69px;
+	top: 121px;
+	width: 19px;
+	height: 19px;
+	z-index: 21;
+	display: block;
+	cursor: pointer;  	
+}
+
+footer .telefone  h2{
+	font-size: 29px;
+	font-family: "Montserrat";
+	color: rgb(217, 27, 91);
+	text-transform: uppercase;
+	line-height: 0.763;
+	text-align: left;
+	-moz-transform: matrix( 0.83186752430739,0,0,0.84615384615384,0,0);
+	-webkit-transform: matrix( 0.83186752430739,0,0,0.84615384615384,0,0);
+	-ms-transform: matrix( 0.83186752430739,0,0,0.84615384615384,0,0);
+	position: absolute;
+	left: 85px;
+	top: 120px;
+	z-index: 17;  
+	display: block;
+	cursor: pointer;
+}
+
+footer h3{
+	font-size: 18px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	line-height: 1.22;
+	text-align: left;
+	-moz-transform: matrix( 0.83177227848567,0,0,0.83205927658963,0,0);
+	-webkit-transform: matrix( 0.83177227848567,0,0,0.83205927658963,0,0);
+	-ms-transform: matrix( 0.83177227848567,0,0,0.83205927658963,0,0);
+	position: absolute;
+	left: 30px;
+	top: 157px;
+	z-index: 19;
+}
+
+footer h4{
+	font-size: 18px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	line-height: 1.22;
+	text-align: left;
+	-moz-transform: matrix( 0.83177227848567,0,0,0.83205927658963,0,0);
+	-webkit-transform: matrix( 0.83177227848567,0,0,0.83205927658963,0,0);
+	-ms-transform: matrix( 0.83177227848567,0,0,0.83205927658963,0,0);
+	position: absolute;
+	left: 33px;
+	top: 180px;
+	z-index: 20; 
+}
+
+footer .whatsapp{
+	display: block;
+	cursor: pointer; 
+}
+
+footer .logo_whatsapp{
+	position: absolute;
+	left: 65px;
+	top: 215px;
+	width: 20px;
+	height: 20px;
+	z-index: 23; 
+}
+
+footer .whatsapp h5{
+	font-size: 15.624px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	line-height: 1.408;
+	text-align: left;
+	-moz-transform: matrix( 0.83266948670487,0,0,0.83076121219558,0,0);
+	-webkit-transform: matrix( 0.83266948670487,0,0,0.83076121219558,0,0);
+	-ms-transform: matrix( 0.83266948670487,0,0,0.83076121219558,0,0);
+	position: absolute;
+	left: 82px;
+	top: 215px;
+	z-index: 18;
+}
+
+footer .email{
+	display: block;
+	cursor: pointer;
+}
+
+footer .email .sac{
+	position: absolute;
+	left: 65px;
+	top: 251px;
+	width: 20px;
+	height: 13px;
+	z-index: 22;
+}
+
+footer .email h6{
+	font-size: 15.624px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	line-height: 1.408;
+	text-align: left;
+	-moz-transform: matrix( 0.83435098416713,0,0,0.80647465341579,0,0);
+	-webkit-transform: matrix( 0.83435098416713,0,0,0.80647465341579,0,0);
+	-ms-transform: matrix( 0.83435098416713,0,0,0.80647465341579,0,0);
+	position: absolute;
+	left: 86px;
+	top: 246px;
+	z-index: 24;	  
+}
+  
+  
+
+
+
+
